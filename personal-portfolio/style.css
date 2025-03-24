@@ -1,35 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
+
 body{
-    background-color: #cecccc;
-    font-family: 'Verdana', sans-serif;
+    background-color: #141414 ;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #111111;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
+main{
+    margin-top: 60px;
+    padding: 20px;
 }
 
 footer{
 
 }
 
+.brand_icon{
+    color:#087F23;
+    font-weight: bold;
+    font-size: large;
+    justify-content: left;
+    text-decoration: none;
+}
+
+.brand_icon:hover{
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}
 
 .navigation ul{
     display: flex;
-    justify-content: center;
+    justify-content: right;
     list-style-type: none;
+    padding-left: 550px;
 }
 
 .navigation li{
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 .navigation a{
-    color: #2b2a2a;
+    color: #f1f1f1;
     text-decoration: none;
     font-weight: bold;
     font-size: large;
 }
 
+.navigation a:hover{
+    color: #087F23;
+}
+
+#home {
+    background-color: #141414;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding: 60px;
+    margin: 30px auto;
+}
+
+.profile_picture{
+    width: 450px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.home_text{
+    color:#f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.home_text h1{
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
+}
+
+.home_text h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.home_text p{
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 700px;
+    padding-right: 40px;
+    margin-bottom: 1rem;
+}
+
+.home_text button{
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    border: 3px solid #087F23;
+    border-radius: 20px;
+    background-color: #141414;
+    color:#f1f1f1;
+}
+
+.home_text button:hover{
+    background-color: #087F23;
+    color: #141414;
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+#home h1, #home h3, #home p {
+    text-align: left;
+}
+
 .project_cards{
+
+}
+
+.project_cards:hover{
 
 }
 
@@ -37,7 +137,15 @@ footer{
 
 }
 
+.skill_cards:hover{
+
+}
+
 .education_cards{
+
+}
+
+.education_cards:hover{
 
 }
 
@@ -45,12 +153,12 @@ footer{
 
 }
 
-.button{
+.social_links:hover{
 
 }
 
 .bold{
-
+    color:#087F23;
 }
 
 @media {
