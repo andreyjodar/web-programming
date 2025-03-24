@@ -1,8 +1,19 @@
 body{
     background-color: #cecccc;
+    font-family: 'Verdana', sans-serif;
 }
+
+header{
+
+}
+
+footer{
+
+}
+
+
 .navigation ul{
-    display: fllex;
+    display: flex;
     justify-content: center;
     list-style-type: none;
 }
@@ -16,4 +27,32 @@ body{
     text-decoration: none;
     font-weight: bold;
     font-size: large;
+}
+
+.project_cards{
+
+}
+
+.skill_cards{
+
+}
+
+.education_cards{
+
+}
+
+.social_links{
+
+}
+
+.button{
+
+}
+
+.bold{
+
+}
+
+@media {
+    
 }
