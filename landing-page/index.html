@@ -6,9 +6,10 @@
             content="width=device-width, initial-scale=1.0">
         <title>SETIF 2025 - Revolução Tecnológica</title>
         <link rel="stylesheet" href="css/index.css"/>
+        <!--<link rel="stylesheet" href="css/variable.css" />-->
     </head>
 
-    <body>
+    <body data-theme="dark">
         <header> <!-- Cabeçalho do Site -->
             <h1>SETIF 2025 - Revolução Tecnológica</h1>
         </header>
@@ -20,6 +21,8 @@
             <p><span class="bold">Local:</span> IFPR Campus Paranavaí</p>
             <button class="button">Inscreva-se</button>
             <button class="button">Saiba Mais</button>
+            <button id="btAlterarTema" onclick="alterarTema()" class="button">Alterar Tema</button>
+            <button class ="button" onclick="buscarInscritos()">Buscar Inscritos</button>
 
             <div class="cards">
                 <div class="card">
@@ -37,7 +40,11 @@
                     <h3>Workshops Práticos</h3>
                     <p>Aprenda na prática com workshops interativos e dinâmicos</p>
                 </div>
+                <div id="inscritos">
+
+                </div>
             </div>
         </main>
+        <script src="js/index.js"></script>
     </body>
 </html>
