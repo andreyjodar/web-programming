@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
 
-body{
-    background-color: #141414 ;
-    font-family: 'Montserrat', sans-serif;
+body, html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    padding: 0;
 }
 
-header{
+body {
+    background-color: #141414 ;
+    font-family: 'Montserrat', sans-serif;
+    color: #f1f1f1;
+}
+
+header {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     padding: 20px 60px;
     margin: 0;
@@ -20,16 +26,21 @@ header{
     z-index: 1000;
 }
 
-main{
+main {
+    flex: 1;
     margin-top: 60px;
     padding: 20px;
 }
 
-footer{
-
+footer {
+    background-color: #044914;
+    text-align: center;
+    color: #111111;
+    font-size: small; 
+    padding: 10px;
 }
 
-.brand_icon{
+.brand_icon {
     color:#087F23;
     font-weight: bold;
     font-size: large;
@@ -37,30 +48,30 @@ footer{
     text-decoration: none;
 }
 
-.brand_icon:hover{
+.brand_icon:hover {
     transform: scale(1.2);
     transition: transform 0.2s;
 }
 
-.navigation ul{
+.navigation ul {
     display: flex;
     justify-content: right;
     list-style-type: none;
     padding-left: 550px;
 }
 
-.navigation li{
+.navigation li {
     margin: 0 20px;
 }
 
-.navigation a{
+.navigation a {
     color: #f1f1f1;
     text-decoration: none;
     font-weight: bold;
     font-size: large;
 }
 
-.navigation a:hover{
+.navigation a:hover {
     color: #087F23;
 }
 
@@ -74,7 +85,7 @@ footer{
     margin: 30px auto;
 }
 
-.profile_picture{
+.profile_picture {
     width: 450px;
     border-radius: 50%;
     overflow: hidden;
@@ -89,17 +100,17 @@ footer{
     text-align: left;
 }
 
-.home_text h1{
+.home_text h1 {
     font-size: 3rem;
     margin-bottom: 0.3rem;
 }
 
-.home_text h3{
+.home_text h3 {
     font-size: 1.5rem;
     margin-bottom: 0.3rem;
 }
 
-.home_text p{
+.home_text p {
     font-size: 1rem;
     line-height: 1.5;
     max-width: 700px;
@@ -107,7 +118,7 @@ footer{
     margin-bottom: 1rem;
 }
 
-.home_text button{
+.home_text button {
     height: 40px;
     width: 120px;
     text-align: center;
@@ -117,7 +128,7 @@ footer{
     color:#f1f1f1;
 }
 
-.home_text button:hover{
+.home_text button:hover {
     background-color: #087F23;
     color: #141414;
     transform: scale(1.1);
@@ -128,40 +139,68 @@ footer{
     text-align: left;
 }
 
-.project_cards{
+.project_cards {
 
 }
 
-.project_cards:hover{
+.project_cards:hover {
 
 }
 
-.skill_cards{
+.skill_cards {
 
 }
 
-.skill_cards:hover{
+.skill_cards:hover {
 
 }
 
-.education_cards{
+.education_cards {
 
 }
 
-.education_cards:hover{
+.education_cards:hover {
 
 }
 
-.social_links{
-
+.social-links {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 1.2rem;
 }
 
-.social_links:hover{
+.social {
+    justify-content: center;
+    transition: transform 0.2s;
+    border: 2px solid #111111;
+    border-radius: 50%;
+    padding: 4px;
+}
 
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social svg {
+    width: 32px;
+    height: 32px;
+    fill: #111111;
+}
+
+.social:hover {
+    transform: scale(1.2);
+    background-color: #111111;
+}
+
+.social:hover svg {
+    fill: #044914;
 }
 
 .bold{
-    color:#087F23;
+    color: #087F23;
 }
 
 @media {
