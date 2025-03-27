@@ -43,7 +43,7 @@ footer {
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    max-width: 2000px;
+    max-width: 1900px;
 }
 
 .brand-icon {
@@ -222,8 +222,8 @@ footer {
 #skills h1 {
     font-size: 3rem;    
     text-align: center;
-    padding-bottom: 2rem;
-    margin: 0;
+    margin-bottom: 80px;
+    margin-top: 0;
 }
 
 .skill-container {
@@ -242,7 +242,6 @@ footer {
 .skill-card {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 100px;
@@ -267,8 +266,53 @@ footer {
     box-shadow: 0px 5px 15px #087F23;
 }
 
-.education-card {
+#education {
+    background-color: #111111;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+}
 
+#education h1 {
+    font-size: 3rem;    
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 0;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 30px 40px 30px;
+    background-color: #087f243d;
+    border-radius: 10px;
+}
+
+.education-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #111111;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.education-card p {
+    text-align: justify;
+}
+
+.education-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px #087F23;
 }
 
 #contact {
@@ -283,6 +327,8 @@ footer {
 
 #contact h1 {
     font-size: 3rem;
+    margin-bottom: 1.8rem;
+    margin-top: 2.8rem;
 }
 
 #contact form {
