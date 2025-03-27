@@ -14,10 +14,8 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: #111111f3;
     position: fixed;
     top: 0;
@@ -27,7 +25,7 @@ header {
 
 main {
     flex: 1;
-    margin-top: 40px;
+    margin-top: 100px;
     margin-bottom: 40px;
 }
 
@@ -39,12 +37,22 @@ footer {
     padding: 10px;
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 2000px;
+}
+
 .brand-icon {
     color:#087F23;
     font-weight: bold;
     font-size: large;
-    justify-content: left;
+    text-align: center;
     text-decoration: none;
+    display: inline-block;
 }
 
 .brand-icon:hover {
@@ -54,9 +62,9 @@ footer {
 
 .navigation ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: right;
     list-style-type: none;
-    padding-left: 550px;
 }
 
 .navigation li {
@@ -81,8 +89,11 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    padding: 60px;
-    margin: 6rem auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 80%;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .profile-picture {
@@ -117,7 +128,7 @@ footer {
     margin-bottom: 1rem;
 }
 
-.home-text button {
+.button {
     height: 40px;
     width: 120px;
     text-align: center;
@@ -127,8 +138,9 @@ footer {
     color:#f1f1f1;
 }
 
-.home-text button:hover {
+.button:hover {
     background-color: #087F23;
+    justify-content: center;
     color: #141414;
     transform: scale(1.1);
     transition: transform 0.2s;
@@ -140,9 +152,11 @@ footer {
 
 #projects {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     margin: 6rem auto;
+    width: 100%;
     gap: 1.8rem;
 }
 
@@ -153,9 +167,13 @@ footer {
 
 .project-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 30px;
     gap: 3rem;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .project-card-link {
@@ -211,18 +229,24 @@ footer {
 .skill-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     background-color: #087f243d;
     border-radius: 10px;
     padding: 40px 30px 40px 30px;
     gap: 3rem;
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .skill-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
+    width: 100px;
+    margin: 0 auto;
     padding: 20px;
     background-color: #111111;
     border-radius: 10px;
@@ -245,6 +269,63 @@ footer {
 
 .education-card {
 
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#contact h1 {
+    font-size: 3rem;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 1.2rem;
+}
+
+.input-container, .textarea-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.input-container input, .textarea-container textarea {
+    border: 2px solid #087F23;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    background: transparent;
+    color: #f1f1f1;
+    border-radius: 10px;
+    outline: none;
+}
+
+.input-container label, .textarea-container label {
+    padding: 8px;
+    margin-bottom: 4px;
+}
+
+.textarea-container textarea{
+    height: 24rem;
+    margin-bottom: 1.8rem;
+    resize: none;
 }
 
 .social-links {
@@ -285,8 +366,4 @@ footer {
 
 .bold{
     color: #087F23;
-}
-
-@media {
-    
 }

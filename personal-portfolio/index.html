@@ -11,16 +11,18 @@
 </head>
 <body>
     <header>
-        <a href="#home" class="brand-icon">Jodar</a>
-        <nav class="navigation">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <a href="#home" class="brand-icon">Jodar</a>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -34,7 +36,7 @@
                 are looking for a developer who thinks this way, appreciates fields like Software Architecture, 
                 Design Patterns, Open Source tecnologies and is eager to learn new skills, then you have come to 
                 the right place. Feel free to contact me if our aspirations align.</p>
-                <button>Hire me</button>
+                <button class="button">Hire me</button>
             </div>
         </section>
 
@@ -138,25 +140,23 @@
         <section id="contact">
             <h1><span class="bold">Contact</span> Me</h1>
             <form action=""> <!-- contact form (action) -->
-                <div>
+                <div class="input-container">
                     <label for="name">Name</label>
                     <input type="text" id="name"/>
                 </div>
-                <div>
+                <div class="input-container">
                     <label for="email">Email</label>
                     <input type="email" id="email"/>
                 </div>
-                <div>
+                <div class="input-container">
                     <label for="subject">Subject</label>
                     <input type="text" id="subject"/>
                 </div>
-                <div>
+                <div class="textarea-container">
                     <label for="msg">Message</label>
                     <textarea id="msg"></textarea>
                 </div>
-                <div class="button">
-                    <button type="submit">Send Message</button>
-                </div>
+                <button type="submit" class="button">Send Message</button>
             </form>
         </section>
     </main>
