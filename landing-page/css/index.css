@@ -1,6 +1,8 @@
 @import url('variable.css');
 
-body{
+
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--bg-color-body);
     color: var(--text-color);
@@ -9,13 +11,13 @@ body{
     text-align: center;
 }
 
-header{
+header {
     background-color: #1e90ff;
     padding: 20px;
     font-size: 1.8em;
 }
 
-main{
+main {
     max-width: 990px;
     background-color: var(--bg-color-container);
     border-radius: 5px;
@@ -24,53 +26,103 @@ main{
     padding: 20px;
 }
 
-.bold{
+.banner {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.gap {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.negrito {
     font-weight: bold;
 }
 
-.cards{
+.cards {
+    margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
 }
 
-.card{
-    background-color: #3b3b3b;
-    width: 250px;
-    box-shadow: 0 0 10px #3b3b3b;
-    border-radius: 10px;
+.card {
     padding: 10px;
+    background-color: #414040;
+    width: 250px;
+    box-shadow: 0 0 10px #414040;
+    border-radius: 10px;
 }
 
-.card img{
+.card img {
     width: 100%;
     border-radius: 10px;
 }
 
-.button {
+.botao {
+    background-color: #ee650a;
+    border-radius: 10px;
     cursor: pointer;
-    border-radius: 5px;
     padding: 20px;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    border: none;
     color: #fff;
-    border: 2px solid transparent;
-    background-color: #f12424;
     font-weight: bold;
-    margin-left: 2px;
-    margin-right: 2px;
+    transition: transform 0.2s ease-in-out;
 }
 
-.button:hover{
-    background-color: #3b3b3b;
-    border: 2px solid #f12424;
-    border-color: #f12424;
+.botao:hover {
+    background-color: #ca5506;
+    transform: scale(1.1);
 }
 
 @media (max-width: 600px) {
-    .card{
+    .card {
         width: 95%;
     }
 
+    .botao {
+        background-color: #111111;
+    }
+}
+
+
+.modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.8);
+    z-index: 1000;
+    position: fixed;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+}
+
+.modal-content{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: var(--bg-color-container);
+    box-shadow: 0 0 20px #111111;
+    padding: 20px;
+    text-align: left;
+    position: relative  ;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.fechar{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
 }

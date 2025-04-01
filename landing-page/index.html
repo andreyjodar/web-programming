@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-            content="width=device-width, initial-scale=1.0">
-        <title>SETIF 2025 - Revolução Tecnológica</title>
-        <link rel="stylesheet" href="css/index.css"/>
-        <!--<link rel="stylesheet" href="css/variable.css" />-->
-    </head>
 
-    <body data-theme="dark">
-        <header> <!-- Cabeçalho do Site -->
-            <h1>SETIF 2025 - Revolução Tecnológica</h1>
-        </header>
-        <main> <!-- Contém as Principais Informações -->
-            <img src="images/banner.jpg" alt="Banner do Site">
-            <h1>O evento Tech mais importante do ano</h1>
-            <p>Participe da SETIF 2025 e descubra tendências que vão moldar o futuro da tecnologia.</p>
-            <p><span class="bold">Data:</span> 10 de outubro de 2025</p>
-            <p><span class="bold">Local:</span> IFPR Campus Paranavaí</p>
-            <button class="button">Inscreva-se</button>
-            <button class="button">Saiba Mais</button>
-            <button id="btAlterarTema" onclick="alterarTema()" class="button">Alterar Tema</button>
-            <button class ="button" onclick="buscarInscritos()">Buscar Inscritos</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="css/variable.css" />-->
+    <link rel="stylesheet" href="css/index.css" />
+</head>
 
-            <div class="cards">
-                <div class="card">
-                    <img src="images/palestras.jpg" alt="Imagem Palestras">
-                    <h3>Palestras Inspiradores</h3>
-                    <p>Os maiores especialistasdo setor discutirão as ultimas tendências tecnológicas.</p>
-                </div>
-                <div class="card">
-                    <img src="images/palestras.jpg" alt="Imagem Networking">
-                    <h3>Networking de Alto Nível</h3>
-                    <p>Conecte-se com profissionais da área e expanda suas oportunidades</p>
-                </div>
-                <div class="card">
-                    <img src="images/palestras.jpg" alt="Imagem Workshop">
-                    <h3>Workshops Práticos</h3>
-                    <p>Aprenda na prática com workshops interativos e dinâmicos</p>
-                </div>
-                <div id="inscritos">
-
-                </div>
+<body data-theme="dark">
+    <header>
+        <h1>SETIF 2025 - Semana de Tecnologia da Informação</h1>
+    </header>
+    <main>
+        <img class="banner" src="images/banner.jpg" alt="Banner do Site" />
+        <h3>O evento TECH mais esperado do ano</h3>
+        <p>Participe da SETIF 2025 e veja tendências que irão moldar o futuro da tecnologia</p>
+        <p><span class="negrito">Data:</span> 10 de outubro de 2025</p>
+        <p><span class="negrito">Local:</span> IFPR Campus Paranavaí</p>
+        <div class="gap" >
+            <button class="botao">Increva-se</button>
+            <button id="saiba-mais" class="botao">Saiba Mais</button>
+            <button onclick="buscarInscritos()" class="botao">Buscar Inscritos</button>
+            <button id="btAlterarTema" onclick="alterarTema()" class="botao">Light</button>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="images/palestrante1.jpg" />
+                <h3>Palestras</h3>
+                <p>Especialistas do sertor irão discutir tendências da tecnologia</p>
             </div>
-        </main>
-        <script src="js/index.js"></script>
-    </body>
+            <div class="card">
+                <img src="images/palestrante1.jpg" />
+                <h3>Networking</h3>
+                <p>Especialistas do sertor irão discutir tendências da tecnologia</p>
+            </div>
+            <div class="card">
+                <img src="images/palestrante1.jpg" />
+                <h3>Workshops</h3>
+                <p>Especialistas do sertor irão discutir tendências da tecnologia</p>
+            </div>
+        </div>
+
+        <div id="inscritos">
+            
+        </div>
+
+    </main>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="fechar" id="fechar-modal">&times;</span>
+            <h1>SETIF 2025</h1>
+            <p>A SETIF 2025 será realizada no dia 10/11/2025</p>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
 </html>

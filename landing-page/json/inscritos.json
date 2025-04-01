@@ -1,7 +1,7 @@
 [
-    { "name":"José" },
-    { "name":"Maria" },
-    { "name":"ana" },
-    { "name": "Alice" },
-    { "name":"Carlos" }
+    {"nome":"José"},
+    { "nome": "Maria" },
+    { "nome": "Ana" },
+    { "nome": "Alice" },
+    { "nome": "Antônio" }
 ]
