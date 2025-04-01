@@ -111,7 +111,7 @@ main {
     box-shadow: 0 0 20px #111111;
     padding: 20px;
     text-align: left;
-    position: relative  ;
+    position: relative; /*adicionei agora*/
 }
 
 .hidden {
