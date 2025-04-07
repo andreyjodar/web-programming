@@ -6,6 +6,37 @@ document.addEventListener("DOMContentLoaded", (event)=>{
     document.body.setAttribute("data-theme", temaLocal);
 });
 
+let idiomaAtual = "pt";
+
+function alterarIdioma() {
+    idiomaAtual = idiomaAtual == "pt" ? "en" : "pt";
+    carregarIdioma(idiomaAtual);
+}
+
+function carregarIdioma(idioma) {
+    fetch(`json/${idioma}.json`)
+    .then(data => data.json())
+    .then(data => {
+        traduzirPagina(data);
+    });
+}
+
+function traduzirPagina(linguagem) {
+    document.querySelectorAll("[data-i18n]").forEach(elemento => {
+        const chave = elemento.getAttribute("data-i18n");
+        if(linguagem[chave]) {
+            elemento.textContent = linguagem[chave];
+        }
+    });
+
+    document.querySelectorAll("[data-i18n-alt]").forEach(elemento => {
+        const chave = elemento.getAttribute("data-i18n-alt");
+        if (linguagem[chave]) {
+            elemento.setAttribute("alt", linguagem[chave]);
+        }
+    });
+}
+
 function alterarTema() {
     //DOM -> document object model
     const tema = document.body.getAttribute("data-theme");
